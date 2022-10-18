@@ -37,12 +37,6 @@ section article:nth-child(even) {
   font-size: 1rem;
   color: red;
 }
-section article:nth-child(odd) {
-  color: blue;
-}
-section article:nth-child(even) {
-  color: red;
-}
 section #footer {
   width: 200px;
   height: 100px;

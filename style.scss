@@ -38,16 +38,8 @@ section {
         &:nth-child(odd) {
             @include article-styles($second-color);
         }
-
         &:nth-child(even) {
             @include article-styles($first-color);
-        }
-
-        &:nth-child(odd) {
-            color: $second-color;
-        }
-        &:nth-child(even) {
-            color: $first-color;
         }
     }
 
