@@ -18,7 +18,7 @@ div {
     }
 }
 
-@mixin article-styles($color, $border-color, $font-size: 1rem) {
+@mixin article-styles($color, $border-color: $third-color, $font-size: 1rem) {
     width: 200px;
     height: 100px;
     border: 1px solid $border-color;
@@ -35,13 +35,12 @@ section {
     padding: 20px;
 
     article {
-
         &:nth-child(odd) {
-            @include article-styles($second-color, $third-color);
+            @include article-styles($second-color);
         }
 
         &:nth-child(even) {
-            @include article-styles($first-color, $third-color);
+            @include article-styles($first-color);
         }
 
         &:nth-child(odd) {
